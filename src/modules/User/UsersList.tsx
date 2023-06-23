@@ -33,9 +33,9 @@ const UsersList = ({ users, info }: Props) => {
   return (
     <>
       {users && users.length !== 0 && (
-        <section className="py-3 rounded-md bg-white flex flex-col w-11/12">
+        <section className="rounded-md bg-white flex flex-col w-11/12">
           {entries > minEntries && (
-            <p className="text-sm self-end text-gray-400">
+            <p className="text-sm self-end text-gray-400 mb-10">
               Showing
               <span className="font-semibold text-gray-900"> {prev}</span> to
               <span className="font-semibold text-gray-900"> {next}</span> of
@@ -43,13 +43,13 @@ const UsersList = ({ users, info }: Props) => {
               Entries
             </p>
           )}
-          <div className="grid grid-cols-cards justify-center justify-items-center gap-6 my-10">
+          <div className="grid grid-cols-cards justify-center justify-items-center gap-6">
             {users.slice(prev - 1, next).map((user) => (
               <UserItem key={user.login.uuid} {...user} />
             ))}
           </div>
           {entries > minEntries && (
-            <div className="self-center flex">
+            <div className="self-center flex mt-10">
               <button
                 className="flex items-center px-4 py-2 font-medium text-white bg-yellow-500 rounded-l hover:bg-yellow-900 gap-2"
                 onClick={handlePrev}

@@ -1,8 +1,9 @@
 import React from "react";
-import Loader from "@/components/Loader";
 import useGetFetch from "@/hooks/useGetFetch";
 import UsersList from "./UsersList";
 import UserForm from "./UserForm";
+import UserFilters from "./UserFilters";
+import Loader from "@/components/Loader";
 
 const UserGenerator = () => {
   const { data, isLoading, fetchData } = useGetFetch();
@@ -17,6 +18,7 @@ const UserGenerator = () => {
   return (
     <>
       <UserForm handleSubmit={handleSubmit} />
+      <UserFilters className={data ? "" : "hidden"} />
       {isLoading ? (
         <Loader />
       ) : (
