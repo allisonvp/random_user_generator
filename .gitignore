@@ -1,0 +1,37 @@
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+junit.xml
+
+# production
+/build
+/.next
+
+# bundle-analyzer
+/analyze
+
+# misc
+.DS_Store
+*.pem
+.swc
+.npmrc
+
+# debug
+npm-debug.log*
+
+# env files
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# AWS Cognito
+/src/aws-exports.ts
+
+# WebStorm
+.idea
