@@ -13,7 +13,7 @@ interface Props {
 
 const UsersList = ({ users, info }: Props) => {
   const entries = info?.results;
-
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [prev, setPrev] = useState<number>(1);
   const [next, setNext] = useState<number>(
     entries >= minEntries ? minEntries : entries
@@ -28,6 +28,10 @@ const UsersList = ({ users, info }: Props) => {
   const handleNext = () => {
     if (prev + minEntries <= entries) setPrev(prev + minEntries);
     setNext(next + minEntries <= entries ? next + minEntries : entries);
+  };
+
+  const handleOpen = (id: string) => {
+    setSelectedId((s) => (s !== id ? id : null));
   };
 
   return (
@@ -45,7 +49,12 @@ const UsersList = ({ users, info }: Props) => {
           )}
           <div className="grid grid-cols-cards justify-center justify-items-center gap-6">
             {users.slice(prev - 1, next).map((user) => (
-              <UserItem key={user.login.uuid} {...user} />
+              <UserItem
+                key={user.login.uuid}
+                {...user}
+                handleOpen={handleOpen}
+                selectedId={selectedId}
+              />
             ))}
           </div>
           {entries > minEntries && (
