@@ -34,7 +34,7 @@ th {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("../assets/Images/flags.png");
+  background-image: url("/Images/flags.png");
   background-repeat: no-repeat;
 }
 
