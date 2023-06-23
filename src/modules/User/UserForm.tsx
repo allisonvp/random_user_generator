@@ -30,7 +30,7 @@ const UserForm = ({ handleSubmit }: Props) => {
 
   return (
     <form
-      className="py-4 px-9 rounded-xl opacity-90 flex items-end justify-center gap-6 bg-light-brown"
+      className="py-4 px-9 rounded-xl opacity-90 flex items-end text-sm justify-center gap-6 bg-light-brown"
       onSubmit={submit}
     >
       <div className="p-1 rounded-md flex items-center gap-2 bg-white">
@@ -64,7 +64,7 @@ const UserForm = ({ handleSubmit }: Props) => {
       </div>
       <button
         disabled={disabledValidation}
-        className="py-1 px-4 font-semibold rounded-md disabled:opacity-60 disabled:bg-yellow-800 bg-yellow-500 hover:bg-yellow-600 text-white"
+        className="py-1 px-4 rounded-md disabled:opacity-60 disabled:bg-yellow-800 bg-yellow-500 hover:bg-yellow-600 text-white"
       >
         Generate
       </button>

@@ -15,9 +15,12 @@ export interface User {
   nat: string;
   location: {
     country: string;
+    state: string;
+    city: string;
   };
   login: {
     uuid: string;
+    username: string;
   };
 }
 export interface DataUsers {

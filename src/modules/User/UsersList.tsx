@@ -43,7 +43,7 @@ const UsersList = ({ users, info }: Props) => {
               Entries
             </p>
           )}
-          <div className="grid grid-cols-cards justify-items-center gap-6 my-10">
+          <div className="grid grid-cols-cards justify-center justify-items-center gap-6 my-10">
             {users.slice(prev - 1, next).map((user) => (
               <UserItem key={user.login.uuid} {...user} />
             ))}
