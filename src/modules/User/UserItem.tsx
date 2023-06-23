@@ -108,7 +108,7 @@ const UserItem = ({
         </div>
         <div
           className={`flex flex-col gap-2 mt-4 break-all ${
-            login.uuid === selectedId ? "" : "hidden"
+            login.uuid === selectedId ? "" : "mobile:hidden"
           }`}
         >
           <div className="flex gap-2 items-center text-xs font-semibold text-gray-500">
