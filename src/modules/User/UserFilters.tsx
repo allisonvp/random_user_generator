@@ -3,7 +3,7 @@ interface Props {
 }
 
 const UserFilters = ({ className }: Props) => {
-  return <div className={className}>UserFilters</div>;
+  return <div className={className}></div>;
 };
 
 export default UserFilters;

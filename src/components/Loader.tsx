@@ -5,7 +5,7 @@ const Loader = () => {
       {arr.map((i: number) => (
         <div
           key={i}
-          className="w-full py-10 p-7 shadow-lg rounded-lg mobile:flex mobile:flex-row animate-fade animate-once animate-duration-900 animate-ease-in-out bg-cards"
+          className="w-full py-10 p-7 shadow-lg rounded-lg mobile:flex mobile:flex-row animate-fade animate-once animate-duration-900 animate-ease-in-out bg-light-purple"
         >
           <div className="animate-pulse mb-7 flex items-center justify-between">
             <div className="rounded-full bg-slate-300 h-10 w-10"></div>

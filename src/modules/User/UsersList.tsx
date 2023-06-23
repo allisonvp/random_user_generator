@@ -2,6 +2,8 @@ import { useState } from "react";
 import UserItem from "./UserItem";
 import { User } from "@/interfaces/User";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import Home from "@/components/Home";
+
 const minEntries = 32;
 
 interface Props {
@@ -36,14 +38,14 @@ const UsersList = ({ users, info }: Props) => {
 
   return (
     <>
-      {users && users.length !== 0 && (
-        <section className="rounded-md bg-white flex flex-col w-11/12">
+      {users && users.length !== 0 ? (
+        <section className="rounded-md flex flex-col w-11/12">
           {entries > minEntries && (
-            <p className="text-sm self-end text-gray-400 mb-10">
+            <p className="text-sm self-end text-brown-500 mb-10">
               Showing
-              <span className="font-semibold text-gray-900"> {prev}</span> to
-              <span className="font-semibold text-gray-900"> {next}</span> of
-              <span className="font-semibold text-gray-900"> {entries} </span>
+              <span className="font-semibold text-gray-700"> {prev}</span> to
+              <span className="font-semibold text-gray-700"> {next}</span> of
+              <span className="font-semibold text-gray-700"> {entries} </span>
               Entries
             </p>
           )}
@@ -60,14 +62,14 @@ const UsersList = ({ users, info }: Props) => {
           {entries > minEntries && (
             <div className="self-center flex mt-10">
               <button
-                className="flex items-center px-4 py-2 font-medium text-white bg-yellow-500 rounded-l hover:bg-yellow-900 gap-2"
+                className="flex items-center px-4 py-2 font-medium text-white bg-brown-500 opacity-80 hover:bg-brown-400 rounded-l gap-2"
                 onClick={handlePrev}
               >
                 <BsArrowLeft size={20} />
                 Prev
               </button>
               <button
-                className="px-4 py-2 font-medium flex items-center border-0 border-l text-white bg-yellow-500 border-white rounded-r hover:bg-yellow-900 gap-2"
+                className="flex items-center px-4 py-2 font-medium text-white bg-brown-500 opacity-80 hover:bg-brown-400 rounded-r gap-2 ml-0.5"
                 onClick={handleNext}
               >
                 Next
@@ -76,6 +78,8 @@ const UsersList = ({ users, info }: Props) => {
             </div>
           )}
         </section>
+      ) : (
+        <Home />
       )}
     </>
   );

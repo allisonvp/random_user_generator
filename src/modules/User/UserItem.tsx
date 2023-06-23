@@ -48,7 +48,7 @@ const UserItem = ({
 }: Props) => {
   return (
     <>
-      <div className="w-full p-7 shadow-lg rounded-lg bg-cards animate-fade-up animate-once animate-duration-1000 animate-ease-linear mobile:p-3">
+      <div className="w-full p-7 shadow-lg rounded-lg bg-light-purple animate-fade-up animate-once animate-duration-1000 animate-ease-linear mobile:p-3">
         <div className="mobile:grid mobile:grid-cols-list-mobile mobile:gap-3 flex flex-col">
           <div className="flex items-center justify-between">
             <Image
