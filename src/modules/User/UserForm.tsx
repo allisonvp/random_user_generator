@@ -30,7 +30,7 @@ const UserForm = ({ handleSubmit }: Props) => {
 
   return (
     <form
-      className="py-4 px-9 rounded-xl opacity-90 flex items-end text-sm justify-center gap-6 bg-brown-200 mobile:flex-col mobile:items-start"
+      className="py-4 px-9 rounded-xl opacity-90 flex items-end text-sm justify-center gap-6 bg-brown-200 mobile:flex-col mobile:items-start mobile:gap-3 mobile:text-xs"
       onSubmit={submit}
     >
       <div className="p-1 rounded-md flex items-center gap-2 bg-white mobile:w-full">

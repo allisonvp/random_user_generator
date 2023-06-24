@@ -22,12 +22,13 @@ const BackToTop = () => {
   };
 
   return (
-    <button
-      className="sticky bottom-5 opacity-75 text-brown-400 ml-auto animate-fade animate-once animate-ease-out"
-      onClick={scrollUp}
-    >
-      {backToTopButton && <BsArrowUpCircleFill size={40} />}
-    </button>
+    <></>
+    // <button
+    //   className="absolute bottom-5 opacity-75 text-brown-400 ml-auto animate-fade animate-once animate-ease-out"
+    //   onClick={scrollUp}
+    // >
+    //   {backToTopButton && <BsArrowUpCircleFill size={40} />}
+    // </button>
   );
 };
 

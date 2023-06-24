@@ -19,16 +19,17 @@ module.exports = {
         blue: "#6ab5ed",
       },
       gridTemplateRows: {
-        layout: "auto auto auto 1fr ",
+        layout: "auto auto 1fr ",
       },
       gridTemplateColumns: {
         cards: "repeat(auto-fit, minmax(282px, 310px))",
         "list-mobile": "auto 1fr auto",
       },
       screens: {
-        mobile: { max: "629px" },
-        tablet: { max: "1147px" },
-        desktop: "1147px",
+        mobile: { max: "500px" },
+        tablet: { min: "500px", max: "1029px" },
+        laptop: { min: "1029px", max: "1540px" },
+        desktop: { min: "1540px" },
       },
       fontFamily: {
         primary: ["Poppins", "sans-serif"],

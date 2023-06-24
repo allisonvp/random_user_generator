@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="w-full desktop:text-6xl mobile:text-2xl text-5xl text-center">
-      <div className="flex flex-col gap-8">
+    <div className="w-full mobile:text-lg laptop:text-4xl tablet:text-3xl text-6xl text-center flex flex-col mobile:items-center tablet:items-center">
+      <div className="flex flex-col items-center justify-center gap-8 mobile:gap-4 h-1/2">
         <h1
           className="text-brown-500 animate-fade-right animate-once animate-duration-[3000ms] animate-delay-200 animate-ease-linear
 "
@@ -12,7 +12,7 @@ const Home = () => {
         </h1>
         <h1 className="animate-fade-left animate-once animate-duration-[3000ms] animate-delay-200 animate-ease-linear">
           connect with{" "}
-          <span className="font-extrabold desktop:text-7xl mobile:text-2xl text-5xl">
+          <span className="font-extrabold text-5xl mobile:text-2xl tablet:text-4xl">
             +2000
           </span>{" "}
           people
@@ -24,21 +24,27 @@ const Home = () => {
           get more opportunities
         </h1>
       </div>
-      <div className="absolute bottom-0 right-0 opacity-50 animate-fade-up animate-once animate-duration-[800ms] animate-ease-in-out mobile:hidden tablet:w-[320px]">
-        <Image
-          src="/Images/people.svg"
-          width={500}
-          height={500}
-          alt="people talking"
-        ></Image>
-      </div>
-      <div className="absolute bottom-0 left-0 opacity-50 animate-fade-up animate-once animate-duration-[800ms] animate-ease-in-out mobile:w-[20px] tablet:w-[320px]">
-        <Image
-          src="/Images/people-2.svg"
-          width={500}
-          height={500}
-          alt="people talking"
-        ></Image>
+      <div className="flex justify-between h-1/2">
+        <div className="animate-fade-up animate-once animate-duration-[800ms] animate-ease-in-out tablet:hidden mobile:hidden mt-auto laptop:w-[400px] desktop:w-[420px]">
+          <Image
+            src="/Images/people.svg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="people talking"
+            style={{ width: "100%", height: "auto" }}
+          ></Image>
+        </div>
+        <div className="animate-fade-up animate-once animate-duration-[800ms] animate-ease-in-out mt-auto tablet:w-[350px] laptop:w-[400px] desktop:w-[420px]">
+          <Image
+            src="/Images/people-2.svg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="people talking"
+            style={{ width: "100%", height: "auto" }}
+          ></Image>
+        </div>
       </div>
     </div>
   );
