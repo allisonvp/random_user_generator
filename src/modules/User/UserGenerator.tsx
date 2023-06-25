@@ -17,8 +17,10 @@ const UserGenerator = () => {
 
   return (
     <>
-      <UserForm handleSubmit={handleSubmit} />
-      <UserFilters className={data ? "" : "hidden"} />
+      <div>
+        <UserForm handleSubmit={handleSubmit} />
+        <UserFilters className={data ? "" : "hidden"} />
+      </div>
       {isLoading ? (
         <Loader />
       ) : (
