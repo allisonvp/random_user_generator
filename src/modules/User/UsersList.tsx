@@ -18,6 +18,8 @@ const UsersList = ({ users, info }: Props) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [prev, setPrev] = useState<number>(1);
   const [next, setNext] = useState<number>(minEntries);
+  const disabledPrevButton = prev <= 1;
+  const disabledNextButton = next >= entries;
 
   const handlePrev = () => {
     if (prev > 1) {
@@ -72,14 +74,16 @@ const UsersList = ({ users, info }: Props) => {
           {entries > minEntries && (
             <div className="self-center flex mt-10">
               <button
-                className="flex items-center px-4 py-2 font-medium text-white bg-brown-500 opacity-80 hover:bg-brown-400 rounded-l gap-2"
+                className="flex items-center px-4 py-2 font-medium text-white bg-brown-500 hover:bg-brown-400 rounded-l gap-2 disabled:bg-brown-300"
+                disabled={disabledPrevButton}
                 onClick={handlePrev}
               >
                 <BsArrowLeft size={20} />
                 Prev
               </button>
               <button
-                className="flex items-center px-4 py-2 font-medium text-white bg-brown-500 opacity-80 hover:bg-brown-400 rounded-r gap-2 ml-0.5"
+                className="flex items-center px-4 py-2 font-medium text-white bg-brown-500 hover:bg-brown-400 rounded-r gap-2 ml-0.5 disabled:bg-brown-300"
+                disabled={disabledNextButton}
                 onClick={handleNext}
               >
                 Next
