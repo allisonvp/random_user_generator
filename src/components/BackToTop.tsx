@@ -25,6 +25,7 @@ const BackToTop = () => {
     <button
       className="fixed opacity-75 bottom-5 right-5 text-brown-400 animate-fade animate-once animate-ease-out"
       onClick={scrollUp}
+      aria-label="back to top"
     >
       {backToTopButton && <BsArrowUpCircleFill size={40} />}
     </button>
