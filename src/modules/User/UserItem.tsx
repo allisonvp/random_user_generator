@@ -15,7 +15,7 @@ interface Props {
     first: string;
     last: string;
   };
-  email: number;
+  email: string;
   dob: {
     age: number;
   };

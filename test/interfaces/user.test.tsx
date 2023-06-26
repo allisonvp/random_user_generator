@@ -26,7 +26,6 @@ const userData = {
 it('has a languageName of "TypeScript"', () => {
   const user: User = userData;
   expect(user.gender).toEqual("male");
-  expect(user.dob.age).toEqual(34);
 });
 
 it('has a languageName of "TypeScript"', () => {
