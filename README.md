@@ -45,7 +45,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Responsive Design
 
-Developed with a responsive design to work properly on different devices (mobiles, tablets, laptops and desktops).
+Developed with a responsive design that adapts to different devices (mobiles, tablets, laptops, and desktops).
 
-
+ <img src="./public/Images/responsive-design.png" width="840">
+ <img src="./public/Images/responsible-design-list.png" width="840">
  
