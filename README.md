@@ -1,6 +1,10 @@
+# Random User Generator
+
+This website offers a simple and user-friendly interface where users can specify the number of random user profiles they want to generate. This tool generates random user profiles with information such as names, usernames, addresses, email addresses, ages, usernames and profile pictures.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Run Locally
 
 First, run the development server:
 
@@ -14,13 +18,34 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `src/pages/index.page.tsx`. The page auto-updates as you edit the file.
+## Built With
 
-## Learn More
+|           |          |
+| :-------- | :------- |
+|<img src="https://skillicons.dev/icons?i=nextjs" /> | [Next.js](https://nextjs.org/)  - A React Web Framework |
+|<img src="https://skillicons.dev/icons?i=tailwind" /> | [Tailwind](https://gettailwind.com/) - CSS Framework |
+|<img src="https://skillicons.dev/icons?i=vercel" /> | [Vercel](https://vercel.com/) - Cloud Application Platform |
+|           |          |
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Enter the number and gender fields
+- List users by pressing the generate button
+- A button to go back to the top when you have scrolled down
+- Pagination when there are more than 24 entries
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Docs
+- tailwind - For the styles.
+- tailwindcss-animated - For custom animations with ease.
+- axios - For the requests
+- react-toastify - Simple javascript toast notifications
+- react-icons - A set of free SVG icons for UI development.
+
+## Demo
+
+### Responsive Design
+
+Developed with a responsive design to work properly on different devices (mobiles, tablets, laptops and desktops).
+
+
+ 
