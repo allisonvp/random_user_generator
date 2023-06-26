@@ -1,6 +1,6 @@
 # Random User Generator
 
-This website offers a simple and user-friendly interface where users can specify the number of random user profiles they want to generate. This tool generates random user profiles with information such as names, usernames, addresses, email addresses, ages, usernames and profile pictures.
+This website offers a simple and user-friendly interface where users can specify the number of random user profiles they want to generate. This tool generates random user profiles with information such as names, usernames, addresses, email addresses, ages and profile pictures.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
